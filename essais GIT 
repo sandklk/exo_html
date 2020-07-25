@@ -1,0 +1,444 @@
+Last login: Sat Jul 18 11:23:14 on ttys000
+You have mail.
+[oh-my-zsh] Would you like to update? [Y/n] y
+Updating Oh My Zsh
+
+remote: Enumerating objects: 166, done.
+remote: Counting objects: 100% (166/166), done.
+remote: Compressing objects: 100% (71/71), done.
+remote: Total 119 (delta 75), reused 90 (delta 47), pack-reused 0
+Réception d'objets: 100% (119/119), 22.15 Kio | 755.00 Kio/s, fait.
+Résolution des deltas: 100% (75/75), complété avec 31 objets locaux.
+Depuis https://github.com/ohmyzsh/ohmyzsh
+ * branch            master     -> FETCH_HEAD
+   7afaee8..9521837  master     -> origin/master
+ .github/ISSUE_TEMPLATE/bug_report.md             | 16 +++++++++-------
+ lib/git.zsh                                      | 93 ++++++++++++++++++++++++++++++++++++++++++++++-----------------------------------------------
+ lib/termsupport.zsh                              |  2 +-
+ lib/theme-and-appearance.zsh                     |  2 +-
+ plugins/aws/aws.plugin.zsh                       |  4 ++--
+ plugins/battery/README.md                        | 11 ++++++++++-
+ plugins/docker-compose/README.md                 |  1 +
+ plugins/docker-compose/docker-compose.plugin.zsh |  1 +
+ plugins/dotenv/README.md                         | 24 +++++++++++++++---------
+ plugins/dotenv/dotenv.plugin.zsh                 | 12 ++++++++++--
+ plugins/extract/README.md                        |  1 +
+ plugins/extract/_extract                         |  2 +-
+ plugins/extract/extract.plugin.zsh               |  2 +-
+ plugins/httpie/README.md                         |  6 ++++++
+ plugins/httpie/httpie.plugin.zsh                 |  7 +++++++
+ plugins/kubectl/README.md                        |  3 ++-
+ plugins/kubectl/kubectl.plugin.zsh               |  3 +++
+ plugins/mix-fast/mix-fast.plugin.zsh             |  5 +++--
+ plugins/sudo/sudo.plugin.zsh                     | 29 +++++++++++++++++++++--------
+ plugins/timer/README.md                          |  1 +
+ plugins/timer/timer.plugin.zsh                   |  8 +++++---
+ plugins/vscode/README.md                         | 32 +++++++++++++++++++++++---------
+ plugins/vscode/vscode.plugin.zsh                 | 27 +++++++++++++++++++--------
+ plugins/yarn/README.md                           | 65 +++++++++++++++++++++++++++++++++--------------------------------
+ plugins/yarn/yarn.plugin.zsh                     |  1 +
+ templates/zshrc.zsh-template                     |  2 +-
+ tools/check_for_upgrade.sh                       |  2 +-
+ 27 files changed, 225 insertions(+), 137 deletions(-)
+ create mode 100644 plugins/httpie/httpie.plugin.zsh
+Rebasage et mise à jour de refs/heads/master avec succès.
+         __                                     __   
+  ____  / /_     ____ ___  __  __   ____  _____/ /_  
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ 
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / 
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  
+                        /____/                       
+Hooray! Oh My Zsh has been updated and/or is at the current version.
+To keep up on the latest news and updates, follow us on Twitter: https://twitter.com/ohmyzsh
+Want to get involved in the community? Join our Discord: https://discord.gg/ohmyzsh
+Get your Oh My Zsh swag at: https://shop.planetargon.com/collections/oh-my-zsh
+➜  ~ 
+➜  ~ pwd 
+/Users/sandrinevuachet
+➜  ~ cd Downloads 
+➜  Downloads ls 
+01_-_Introduction_a_Numpy.ipynb         Corrigé Groupby                         Red_Rose                                actor.db.sql                            ftt.ipynb
+01_-_Operateur_Fonction_et_Boucle.ipynb DB.Browser.for.SQLite-3.12.0.dmg        Referentiel_Competence.txt              characters;                             git_tutorial
+01_-_Rappels_des_concepts_python.ipynb  DS_Store                                RepartitionParDepartement               development                             jupyter
+Anaconda3-2020.02-MacOSX-x86_64.sh      EXO SIMPLON                             SQL                                     development.sqlite3                     jupyter 
+Correction du Quizz Pyton               Exercice                                Serie Temporelle - Visualisation        exo-groupes-sql                         movie_app
+Correction_Questionnaire.ipynb          Package Control.sublime-package         TD_Commandes_principales-2.md           exo_html                                movie_app_correction_step1
+Corrige_-_Introduction_a_Pandas.ipynb   Quizz_Pandas                            Veille_Pandas.ipynb                     exo_maths
+➜  Downloads cd exo_html 
+➜  exo_html ls 
+index.html ressources
+➜  exo_html git init
+Initialized empty Git repository in /Users/sandrinevuachet/Downloads/exo_html/.git/
+➜  exo_html git:(master) ✗ git status 
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	index.html
+	ressources/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  exo_html git:(master) ✗ git add 
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+➜  exo_html git:(master) ✗ git add.
+WARNING: You called a Git command named 'add.', which does not exist.
+Continuing in 0.1 seconds, assuming that you meant 'add'.
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+➜  exo_html git:(master) ✗ git add exo_html
+fatal: pathspec 'exo_html' did not match any files
+➜  exo_html git:(master) ✗ git status 
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	index.html
+	ressources/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  exo_html git:(master) ✗ git add.
+WARNING: You called a Git command named 'add.', which does not exist.
+Continuing in 0.1 seconds, assuming that you meant 'add'.
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+➜  exo_html git:(master) ✗ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	index.html
+	ressources/
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  exo_html git:(master) ✗ git add.
+WARNING: You called a Git command named 'add.', which does not exist.
+Continuing in 0.1 seconds, assuming that you meant 'add'.
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+➜  exo_html git:(master) ✗ git add .
+➜  exo_html git:(master) ✗ git status 
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   index.html
+	new file:   ressources/.DS_Store
+	new file:   ressources/Red_Rose/OFL.txt
+	new file:   ressources/Red_Rose/RedRose-Bold.ttf
+	new file:   ressources/Red_Rose/RedRose-Light.ttf
+	new file:   ressources/Red_Rose/RedRose-Regular.ttf
+	new file:   "ressources/images/cam\303\251ra.jpg"
+	new file:   ressources/images/papillon.jpg
+	new file:   ressources/images/radio.jpg
+	new file:   ressources/images/ventilo.jpg
+	new file:   ressources/style.css
+
+➜  exo_html git:(master) ✗ git commit -m "first commit"
+[master (root-commit) d1c5d4d] first commit
+ 12 files changed, 380 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 index.html
+ create mode 100644 ressources/.DS_Store
+ create mode 100755 ressources/Red_Rose/OFL.txt
+ create mode 100755 ressources/Red_Rose/RedRose-Bold.ttf
+ create mode 100755 ressources/Red_Rose/RedRose-Light.ttf
+ create mode 100755 ressources/Red_Rose/RedRose-Regular.ttf
+ create mode 100644 "ressources/images/cam\303\251ra.jpg"
+ create mode 100644 ressources/images/papillon.jpg
+ create mode 100644 ressources/images/radio.jpg
+ create mode 100644 ressources/images/ventilo.jpg
+ create mode 100644 ressources/style.css
+➜  exo_html git:(master) git remote add origin https://github.com/sandklk/exo_html.git
+➜  exo_html git:(master) git push -u origin master
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 1.53 MiB | 1.35 MiB/s, done.
+Total 16 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/sandklk/exo_html.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+➜  exo_html git:(master) git fetch 
+➜  exo_html git:(master) ✗ git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  exo_html git:(master) ✗ git add .
+➜  exo_html git:(master) ✗ git status  
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+➜  exo_html git:(master) ✗ git commit 
+[master 9cf97e5] "essai adrien"
+ 1 file changed, 4 insertions(+)
+➜  exo_html git:(master) git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+➜  exo_html git:(master) git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 872 bytes | 290.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/sandklk/exo_html.git
+   d1c5d4d..9cf97e5  master -> master
+➜  exo_html git:(master) git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  exo_html git:(master) ✗ git add .
+➜  exo_html git:(master) ✗ git commit 
+[master 9160bca] "adrien"
+ 1 file changed, 13 deletions(-)
+➜  exo_html git:(master) git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+git loTo https://github.com/sandklk/exo_html.git
+   9cf97e5..9160bca  master -> master
+➜  exo_html git:(master) git log 
+commit 9160bca582d0e8a76005123e20ef321bcc7e94ae (HEAD -> master, origin/master)
+Author: muriel vuachet <sandvct@gmail.com>
+Date:   Fri Jul 24 13:47:07 2020 +0200
+
+    "adrien"
+
+commit 9cf97e5e32d0813d7638999e7bcc5218d8dcb9a8
+Author: muriel vuachet <sandvct@gmail.com>
+Date:   Fri Jul 24 13:44:22 2020 +0200
+
+    "essai adrien"
+
+commit d1c5d4d8e7527a7134cb8380563c1679df67113f
+Author: muriel vuachet <sandvct@gmail.com>
+Date:   Fri Jul 24 12:26:18 2020 +0200
+
+    first commit
+➜  exo_html git:(master) git hist
+* 9160bca 2020-07-24 | "adrien" (HEAD -> master, origin/master) [muriel vuachet]
+* 9cf97e5 2020-07-24 | "essai adrien" [muriel vuachet]
+* d1c5d4d 2020-07-24 | first commit [muriel vuachet]
+➜  exo_html git:(master) git fetch
+➜  exo_html git:(master) git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+➜  exo_html git:(master) 
+➜  exo_html git:(master) git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+➜  exo_html git:(master) git fetch
+➜  exo_html git:(master) git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+➜  exo_html git:(master) git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+➜  exo_html git:(master) git fetch
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 266 bytes | 53.00 KiB/s, done.
+From https://github.com/sandklk/exo_html
+   9160bca..8ac0b66  master     -> origin/master
+➜  exo_html git:(master) git status 
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+➜  exo_html git:(master) git pull
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+Updating 9160bca..8ac0b66
+Fast-forward
+ salut.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 salut.html
+➜  exo_html git:(master) git log 
+commit 8ac0b6637ef65d55a38d1f4fa91ac3e314b61e1a (HEAD -> master, origin/master)
+Author: adrienf <mygnyh@gmail.com>
+Date:   Fri Jul 24 13:52:45 2020 +0200
+
+    Muriel
+
+commit 9160bca582d0e8a76005123e20ef321bcc7e94ae
+Author: muriel vuachet <sandvct@gmail.com>
+Date:   Fri Jul 24 13:47:07 2020 +0200
+
+    "adrien"
+
+commit 9cf97e5e32d0813d7638999e7bcc5218d8dcb9a8
+Author: muriel vuachet <sandvct@gmail.com>
+Date:   Fri Jul 24 13:44:22 2020 +0200
+
+    "essai adrien"
+
+commit d1c5d4d8e7527a7134cb8380563c1679df67113f
+Author: muriel vuachet <sandvct@gmail.com>
+Date:   Fri Jul 24 12:26:18 2020 +0200
+
+    first commit
+➜  exo_html git:(master) git hist
+* 8ac0b66 2020-07-24 | Muriel (HEAD -> master, origin/master) [adrienf]
+* 9160bca 2020-07-24 | "adrien" [muriel vuachet]
+* 9cf97e5 2020-07-24 | "essai adrien" [muriel vuachet]
+* d1c5d4d 2020-07-24 | first commit [muriel vuachet]
+➜  exo_html git:(master) git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  exo_html git:(master) ✗ git add .
+➜  exo_html git:(master) ✗ git commit -m "ajout Muriel"
+[master 2dcd5ed] ajout Muriel
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+➜  exo_html git:(master) git push 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 364 bytes | 364.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/sandklk/exo_html.git
+   8ac0b66..2dcd5ed  master -> master
+➜  exo_html git:(master) git hist
+* 2dcd5ed 2020-07-24 | ajout Muriel (HEAD -> master, origin/master) [muriel vuachet]
+* 8ac0b66 2020-07-24 | Muriel [adrienf]
+* 9160bca 2020-07-24 | "adrien" [muriel vuachet]
+* 9cf97e5 2020-07-24 | "essai adrien" [muriel vuachet]
+* d1c5d4d 2020-07-24 | first commit [muriel vuachet]
+➜  exo_html git:(master) pwd 
+/Users/sandrinevuachet/Downloads/exo_html
+➜  exo_html git:(master) ✗ cd ../
+➜  Downloads pwd
+/Users/sandrinevuachet/Downloads
+➜  Downloads mkdir newhtml
+➜  Downloads cd newhtml 
+➜  newhtml git init 
+Initialized empty Git repository in /Users/sandrinevuachet/Downloads/newhtml/.git/
+➜  newhtml git:(master) ls
+➜  newhtml git:(master) git clone https://github.com/sandklk/exo_html.git                                                                                                                                                                  Cloning into 'exo_html'...
+remote: Enumerating objects: 28, done.
+remote: Counting objects: 100% (28/28), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 28 (delta 6), reused 27 (delta 5), pack-reused 0
+Unpacking objects: 100% (28/28), 1.54 MiB | 2.95 MiB/s, done.
+➜  newhtml git:(master) ✗ ls 
+exo_html
+➜  newhtml git:(master) ✗ cd exo_html 
+➜  exo_html git:(master) git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+➜  exo_html git:(master) ls 
+index.html ressources salut.html
+➜  exo_html git:(master) touch salut2.html
+➜  exo_html git:(master) ✗ ls 
+index.html  ressources  salut.html  salut2.html
+➜  exo_html git:(master) ✗ git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	salut2.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  exo_html git:(master) ✗ git add .
+➜  exo_html git:(master) ✗ git commit -m "essai muriel"
+[master 87f72ce] essai muriel
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 salut2.html
+➜  exo_html git:(master) git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+gitTo https://github.com/sandklk/exo_html.git
+   2dcd5ed..87f72ce  master -> master
+➜  exo_html git:(master) git hist
+* 87f72ce 2020-07-24 | essai muriel (HEAD -> master, origin/master, origin/HEAD) [muriel vuachet]
+* 2dcd5ed 2020-07-24 | ajout Muriel [muriel vuachet]
+* 8ac0b66 2020-07-24 | Muriel [adrienf]
+* 9160bca 2020-07-24 | "adrien" [muriel vuachet]
+* 9cf97e5 2020-07-24 | "essai adrien" [muriel vuachet]
+* d1c5d4d 2020-07-24 | first commit [muriel vuachet]
+➜  exo_html git:(master) 
