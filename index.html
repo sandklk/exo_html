@@ -20,7 +20,7 @@
   <h2>Créée avec amour chez <a href="https://simplon.co" target="blank">Simplon.co</a></h2>
 </header>
 
-<nav>
+<nav class="navbar">
   <ul>
     <li><a href="boutique.html" target="_blank">Boutique</a></li>
     <li><a href="#">Blog</a></li>
@@ -84,8 +84,7 @@
       function myfunction(){
         document.location.href='boutique.html';
       }
-
-    </script>
+</script>
 
 <section>
 
@@ -145,10 +144,53 @@
   </div>
 </div>
 
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Un commentaire ???
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Laissez votre avis, ça nous intéresse !</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="">
+          <label for="nom">* </label><input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+          <label for="mail">* </label><input type="mail" name="mail" id="mail" placeholder="Votre mail" required>
+          <textarea cols="40" rows="10"></textarea>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+<script>
+  $(function(){
+    $('#open').click(function() {
+      $('.modal').modal('show')
+    })
+    $('.closemodal').click(function() {
+      $('.modal').modal('hide')
+    })
+  })
+</script>
 
   </body>
 </html>

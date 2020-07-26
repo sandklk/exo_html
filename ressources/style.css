@@ -50,6 +50,7 @@ background-size: cover;
 header{
   text-align: center;
   padding: 20px;
+  margin-bottom: 1rem;
 }
 
 header a{
@@ -58,12 +59,18 @@ header a{
 }
 
 /*----------------------------navbar----------------*/
+.navbar{
+  display:flex;
+  justify-content: flex-end;
+}
+
 nav ul{
   display:flex;
   justify-content: flex-end;
   list-style:none;
   margin-left:0;
   padding-left:0;
+  margin-bottom: 1rem;
 }
 
 nav li {
@@ -80,6 +87,7 @@ nav a {
 nav a:last-child{
   margin-right: 1rem;
 }
+
 
 /*----------------article-------------------------------*/
 
@@ -125,8 +133,12 @@ article .my_btn{
   justify-content: flex-end;
 
 }
+ /*-----------------Modal-----------------*/
 
-
+.btn btn-primary{
+  display:flex;
+  justify-content: flex-end;
+}
 /*--------------------section-------------------------*/
 
 section{
@@ -224,10 +236,24 @@ section{
 }
 
 
+/*Boutique*/
 
+.contenu{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  background-color:black;
+  width: 700px;
+  height: 700px;
+  margin:auto;
+  margin-bottom: 2rem;
+}
 
-
-
+.contenu p{
+  font-size:4rem;
+   color:white;
+}
 
 
 
