@@ -23,7 +23,6 @@
 <nav class="navbar">
   <ul>
     <li><a href="boutique.html" target="_blank">Boutique</a></li>
-    <li><a href="#">Blog</a></li>
     <li><a href="#form" class="bouton">Formulaire</a></li>
     <li><a href="propos.html" target="_blank">A propos</a></li>
   </ul>
@@ -89,7 +88,7 @@
 <section>
 
   <div id="form">
-    <h3>Nous contacter</h3>
+    <h3>Demander un devis</h3>
   </div>
 
   <div class="typeform-widget" data-url="https://form.typeform.com/to/QMhDPQLW"
@@ -146,7 +145,7 @@
 
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal">
   Un commentaire ???
 </button>
 
@@ -161,10 +160,12 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="post" action="">
-          <label for="nom">* </label><input type="text" name="nom" id="nom" placeholder="Votre nom" required>
-          <label for="mail">* </label><input type="mail" name="mail" id="mail" placeholder="Votre mail" required>
-          <textarea cols="40" rows="10"></textarea>
+        <form class="formodal" method="post" action="">
+
+          <label for="nom"></label><input type="text" name="nom" id="nom" placeholder="* Votre nom" required>
+          <label for="mail"></label><input type="mail" name="mail" id="mail" placeholder="*Votre mail" required>
+
+         <textarea cols="40" rows="10"></textarea>
         </form>
       </div>
       <div class="modal-footer">
